@@ -95,7 +95,6 @@ void traverseStack(Stack* stack) {
 bool isEmpty(Stack* stack) {
     if (stack == NULL) return true;
 
-    free(stack->top);
     return stack->top == NULL;
 }
 
