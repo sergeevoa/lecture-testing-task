@@ -13,7 +13,8 @@ int main() {
     printf("After pushing elements:\n");
     traverseStack(&stack);
 
-    pop(&stack);
+    int deletedEl = pop(&stack);
+    printf("Deleted element value: %d\n", deletedEl);
 
     printf("After popping an element:\n");
     traverseStack(&stack);

@@ -23,7 +23,7 @@ void destroyStack(Stack *stack);
 
 void push(Stack* stack, int data);
 
-void pop(Stack* stack);
+int pop(Stack* stack);
 
 Node* searchByValue(Stack* stack, int value);
 
