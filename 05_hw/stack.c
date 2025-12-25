@@ -23,6 +23,7 @@ void destroyStack(Stack* stack) {
         current = current->next;
 	    free(tmp);
     }
+    stack->top = NULL;
 }
 
 void push(Stack* stack, int data) {
