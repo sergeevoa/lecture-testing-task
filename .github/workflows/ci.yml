@@ -1,0 +1,30 @@
+name: C CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y cmake clang
+
+    - name: Configure
+      run: |
+        cmake -S 05_hw -B build -DCMAKE_BUILD_TYPE=Debug
+
+    - name: Build
+      run: |
+        cmake --build build
+
+    - name: Run tests
+      run: |
+        ./build/tests
