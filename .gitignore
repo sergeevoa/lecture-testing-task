@@ -1,0 +1,38 @@
+# ===== Build directories =====
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# ===== Compiled objects =====
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+
+# ===== Executables =====
+main
+tests
+*.exe
+
+# ===== Editor / IDE files =====
+.vscode/
+.vs/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
+# ===== Logs / temp =====
+*.log
+*.tmp
+
+# ===== Valgrind =====
+vgcore.*
